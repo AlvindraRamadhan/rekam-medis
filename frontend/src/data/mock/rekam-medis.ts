@@ -1,0 +1,195 @@
+import type { RekamMedis } from '@/types'
+
+export const mockRekamMedis: RekamMedis[] = [
+  {
+    id: 'rm-001',
+    kunjunganId: 'knj-013',
+    dokterId: 'dok-001',
+    tanggalWaktu: new Date('2026-06-14T09:30:00'),
+    keluhanSubjektif: 'Batuk berdahak sejak 4 hari, pilek, demam ringan, tenggorokan sakit.',
+    pemeriksaanFisik:
+      'KU: baik, kesadaran CM. TD 120/80 mmHg, Nadi 88x/mnt, Suhu 37.8°C, RR 18x/mnt. Faring hiperemis, tonsil T1/T1. Pulmo: vesikuler, ronki (-), wheezing (-). Abdomen: soepel.',
+    diagnosisUtama: { kode: 'J06.9', deskripsi: 'Infeksi Saluran Pernapasan Atas Akut' },
+    diagnosisSekunder: [],
+    tindakanMedis: [{ kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' }],
+    rencanaMediamentosa:
+      'Ambroksol 3x30mg, Paracetamol 3x500mg PRN demam, Cetirizine 1x10mg malam',
+    rencanaNonMediamentosa: 'Istirahat cukup, minum air putih minimal 2L/hari',
+    jenisRencana: ['medikamentosa'],
+    catatanDiet: 'Diet biasa, hindari makanan pedas dan berminyak',
+    edukasiPasien:
+      'Edukasi cuci tangan yang benar, etika batuk, dan minum obat sesuai anjuran.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-14T09:45:00'),
+  },
+  {
+    id: 'rm-002',
+    kunjunganId: 'knj-014',
+    dokterId: 'dok-003',
+    tanggalWaktu: new Date('2026-06-14T09:15:00'),
+    keluhanSubjektif: 'Sakit gigi geraham bawah kiri sejak 2 hari, nyeri berdenyut, susah tidur.',
+    pemeriksaanFisik:
+      'Ekstraoral: tidak ada pembengkakan. Intraoral: gigi 36 karies profunda, perkusi (+), tekanan (+), gingiva sekitar normal.',
+    diagnosisUtama: { kode: 'K04.0', deskripsi: 'Pulpitis' },
+    diagnosisSekunder: [{ kode: 'K02.9', deskripsi: 'Karies Gigi, tidak spesifik' }],
+    tindakanMedis: [
+      { kode: '23.09', deskripsi: 'Pencabutan gigi' },
+      { kode: '96.54', deskripsi: 'Irigasi kavitas gigi' },
+    ],
+    rencanaMediamentosa: 'Amoksisilin 3x500mg 5 hari, Asam Mefenamat 3x500mg PRN nyeri',
+    rencanaNonMediamentosa: 'Rencana perawatan saluran akar pada kunjungan berikutnya',
+    jenisRencana: ['medikamentosa', 'non_medikamentosa'],
+    catatanDiet: 'Hindari makanan keras dan minuman panas/dingin',
+    edukasiPasien: 'Edukasi cara sikat gigi yang benar dan pentingnya kontrol rutin 6 bulan sekali.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-14T09:35:00'),
+  },
+  {
+    id: 'rm-003',
+    kunjunganId: 'knj-009',
+    dokterId: 'dok-001',
+    tanggalWaktu: new Date('2026-06-13T10:00:00'),
+    keluhanSubjektif: 'BAB cair lebih dari 5 kali sejak kemarin, mual, tidak mau makan, lemas.',
+    pemeriksaanFisik:
+      'KU: sedang, kesadaran CM. TD 100/70 mmHg, Nadi 96x/mnt, Suhu 37.2°C. Abdomen: bising usus meningkat, nyeri tekan periumbilikal (+). Turgor kulit menurun.',
+    diagnosisUtama: { kode: 'A09', deskripsi: 'Diare dan Gastroenteritis' },
+    diagnosisSekunder: [{ kode: 'E86', deskripsi: 'Deplesi Volume (Dehidrasi Ringan)' }],
+    tindakanMedis: [
+      { kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' },
+    ],
+    rencanaMediamentosa:
+      'Oralit 200ml setiap BAB cair, Zinc 1x20mg 10 hari, Loperamid 2mg PRN, Domperidon 3x10mg',
+    rencanaNonMediamentosa: 'Minum cairan yang cukup, rehidrasi oral',
+    jenisRencana: ['medikamentosa'],
+    catatanDiet: 'Diet lunak, BRAT diet (Banana, Rice, Apple, Toast)',
+    edukasiPasien: 'Edukasi tanda-tanda bahaya dehidrasi berat, cuci tangan sebelum makan.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-13T10:20:00'),
+  },
+  {
+    id: 'rm-004',
+    kunjunganId: 'knj-010',
+    dokterId: 'dok-002',
+    tanggalWaktu: new Date('2026-06-12T11:00:00'),
+    keluhanSubjektif:
+      'Nyeri ulu hati, mual, kembung sejak 1 minggu. Sering terlambat makan dan minum kopi.',
+    pemeriksaanFisik:
+      'KU: baik. TD 120/80 mmHg, Nadi 78x/mnt, Suhu 36.7°C. Abdomen: nyeri tekan epigastrium (+), hepar dan lien tidak teraba, bising usus normal.',
+    diagnosisUtama: { kode: 'K29.7', deskripsi: 'Gastritis, tidak spesifik' },
+    diagnosisSekunder: [],
+    tindakanMedis: [{ kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' }],
+    rencanaMediamentosa: 'Omeprazol 2x20mg sebelum makan, Antasida 3x1 tablet setelah makan',
+    rencanaNonMediamentosa: 'Modifikasi gaya hidup',
+    jenisRencana: ['medikamentosa', 'non_medikamentosa'],
+    catatanDiet: 'Hindari kopi, alkohol, makanan pedas, asam. Makan teratur.',
+    edukasiPasien:
+      'Edukasi pola makan teratur, hindari stres, tidak tidur segera setelah makan.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-12T11:20:00'),
+  },
+  {
+    id: 'rm-005',
+    kunjunganId: 'knj-012',
+    dokterId: 'dok-004',
+    tanggalWaktu: new Date('2026-06-11T08:30:00'),
+    keluhanSubjektif: 'Kontrol rutin hipertensi. Kadang sakit kepala bagian belakang, tidak ada keluhan lain.',
+    pemeriksaanFisik:
+      'KU: baik. TD 155/95 mmHg, Nadi 80x/mnt, Suhu 36.5°C. Jantung: BJ I/II reguler, murmur (-). Paru: vesikuler, ronki (-). Ekstremitas: edema (-/-), akral hangat.',
+    diagnosisUtama: { kode: 'I10', deskripsi: 'Hipertensi Esensial' },
+    diagnosisSekunder: [],
+    tindakanMedis: [
+      { kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' },
+    ],
+    rencanaMediamentosa:
+      'Amlodipine 1x10mg, Valsartan 1x80mg — lanjutkan. Captopril 12.5mg PRN emergensi.',
+    rencanaNonMediamentosa: 'DASH diet, olahraga ringan 30 mnt/hari',
+    jenisRencana: ['medikamentosa', 'non_medikamentosa'],
+    catatanDiet: 'Diet rendah garam (< 2g/hari), kurangi lemak jenuh, perbanyak sayur buah.',
+    edukasiPasien: 'Pentingnya minum obat rutin, pantau TD mandiri, kontrol 1 bulan lagi.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-11T08:50:00'),
+  },
+  {
+    id: 'rm-006',
+    kunjunganId: 'knj-005',
+    dokterId: 'dok-004',
+    tanggalWaktu: new Date('2026-06-10T09:00:00'),
+    keluhanSubjektif: 'Sesak napas, batuk kering malam hari, dada terasa berat sejak kemarin.',
+    pemeriksaanFisik:
+      'KU: sedang. TD 110/70 mmHg, Nadi 100x/mnt, Suhu 36.8°C, SpO2 94%. Pulmo: ekspirasi memanjang, wheezing (+/+). Retraksi intercostal ringan.',
+    diagnosisUtama: { kode: 'J45.9', deskripsi: 'Asma, tidak spesifik' },
+    diagnosisSekunder: [],
+    tindakanMedis: [
+      { kode: '93.94', deskripsi: 'Nebulisasi' },
+      { kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' },
+    ],
+    rencanaMediamentosa:
+      'Salbutamol inhaler 2 puff PRN, Fluticasone inhaler 2x2 puff, Montelukast 1x10mg malam',
+    rencanaNonMediamentosa: 'Identifikasi dan hindari faktor pemicu',
+    jenisRencana: ['medikamentosa', 'non_medikamentosa'],
+    catatanDiet: 'Diet biasa, hindari makanan yang memicu alergi',
+    edukasiPasien:
+      'Teknik penggunaan inhaler yang benar, hindari debu, asap rokok. Bawa inhaler ke mana saja.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-10T09:30:00'),
+  },
+  {
+    id: 'rm-007',
+    kunjunganId: 'knj-006',
+    dokterId: 'dok-001',
+    tanggalWaktu: new Date('2026-06-09T10:30:00'),
+    keluhanSubjektif: 'Nyeri pinggang bawah sejak 3 hari, bertambah saat berdiri lama, berkurang saat berbaring.',
+    pemeriksaanFisik:
+      'KU: baik. TD 125/82 mmHg, Nadi 76x/mnt. Lumbal: lordosis normal, nyeri tekan L4-L5 (+), SLR (-). ROM lumbal terbatas fleksi. Ekstremitas bawah: kekuatan 5/5, refleks normal.',
+    diagnosisUtama: { kode: 'M54.5', deskripsi: 'Nyeri Punggung Bawah' },
+    diagnosisSekunder: [{ kode: 'M47.8', deskripsi: 'Spondilosis Lumbal' }],
+    tindakanMedis: [
+      { kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' },
+    ],
+    rencanaMediamentosa:
+      'Natrium Diklofenak 2x50mg sesudah makan, Methocarbamol 3x750mg, Vitamin B complex 1x1',
+    rencanaNonMediamentosa: 'Fisioterapi, latihan penguatan otot core',
+    jenisRencana: ['medikamentosa', 'non_medikamentosa'],
+    catatanDiet: 'Diet biasa, cukup kalsium',
+    edukasiPasien: 'Posisi ergonomis saat bekerja, kompres hangat, hindari mengangkat berat.',
+    kondisiKeluar: 'membaik',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-09T10:50:00'),
+  },
+  {
+    id: 'rm-008',
+    kunjunganId: 'knj-007',
+    dokterId: 'dok-002',
+    tanggalWaktu: new Date('2026-06-08T11:00:00'),
+    keluhanSubjektif: 'Bintil-bintil berisi cairan di kulit, demam 2 hari, badan pegal-pegal, gatal.',
+    pemeriksaanFisik:
+      'KU: sedang. Suhu 38.2°C. Kulit: vesikel generalisata berbagai stadium (makula, papul, vesikel, krusta) tersebar di wajah, dada, punggung, perut. Selaput lendir tidak terlibat.',
+    diagnosisUtama: { kode: 'B01.9', deskripsi: 'Varisela (Cacar Air)' },
+    diagnosisSekunder: [],
+    tindakanMedis: [{ kode: '89.01', deskripsi: 'Pemeriksaan dan konsultasi dokter umum' }],
+    rencanaMediamentosa:
+      'Asiklovir 5x800mg 7 hari (mulai SESEGERA MUNGKIN), Paracetamol 3x500mg PRN demam, CTM 3x4mg PRN gatal, Bedak salisil 2% untuk lesi',
+    rencanaNonMediamentosa: 'Isolasi di rumah sampai semua lesi mengering',
+    jenisRencana: ['medikamentosa'],
+    catatanDiet: 'Diet gizi seimbang, perbanyak minum air',
+    edukasiPasien:
+      'Jangan digaruk, potong kuku pendek, mandi air hangat. Isolasi dari ibu hamil dan bayi. Tidak masuk sekolah/kerja.',
+    kondisiKeluar: 'belum_sembuh',
+    isFinalized: true,
+    finalizedAt: new Date('2026-06-08T11:25:00'),
+    addendum: [
+      {
+        id: 'add-001',
+        isi: 'Pasien kontrol hari ke-5, lesi mulai mengering. Lanjutkan asiklovir hingga hari ke-7.',
+        dokterId: 'dok-002',
+        timestamp: new Date('2026-06-13T10:00:00'),
+      },
+    ],
+  },
+]

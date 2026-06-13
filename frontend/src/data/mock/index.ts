@@ -1,0 +1,8 @@
+export { mockDokter } from './dokter'
+export { mockPasien } from './pasien'
+export { mockKunjungan } from './kunjungan'
+export { mockRekamMedis } from './rekam-medis'
+export { mockObat } from './obat'
+export { mockJadwal } from './jadwal'
+export { mockTagihan } from './tagihan'
+export { mockICD10 } from './icd10'
