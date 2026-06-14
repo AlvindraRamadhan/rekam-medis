@@ -82,6 +82,7 @@ export const navigationByRole: Record<UserRole, NavSection[]> = {
       items: [
         { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
         { label: "Antrian Pasien", href: "/antrian", icon: ClipboardList },
+        { label: "Jadwal Saya", href: "/jadwal-dokter", icon: Calendar },
         { label: "Rekam Medis SOAP", href: "/rekam-medis", icon: FileText },
         { label: "Resep Elektronik", href: "/resep", icon: Pill },
         { label: "Surat & Rujukan", href: "/surat-rujukan", icon: FileCheck },

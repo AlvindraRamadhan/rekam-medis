@@ -121,6 +121,46 @@
   --sidebar-ring:           #10b981;
 }
 
+/* ─── Print: Professional Invoice ─── */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the invoice */
+  #invoice-print-root,
+  #invoice-print-root * {
+    visibility: visible;
+  }
+
+  /* Position invoice at page origin */
+  #invoice-print-root {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 99999;
+    overflow: visible;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15%, 45%, 75% { transform: translateX(-5px); }
+  30%, 60%, 90% { transform: translateX(5px); }
+}
+
+.animate-shake {
+  animation: shake 0.45s ease-in-out;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -14,6 +14,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 18,
     isLibur: false,
   },
   {
@@ -25,6 +26,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '16:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 8,
     isLibur: false,
   },
   {
@@ -36,6 +38,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 14,
     isLibur: false,
   },
   {
@@ -47,6 +50,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 20,
     isLibur: false,
   },
   {
@@ -58,6 +62,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 0,
     isLibur: true,
     keteranganLibur: 'Cuti tahunan',
   },
@@ -70,6 +75,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '11:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 10,
     isLibur: false,
   },
   {
@@ -81,6 +87,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 5,
     isLibur: false,
   },
   // ─── dr. Siti Rahayu (dok-002) ────────────────────────────────────────────
@@ -93,6 +100,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '17:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 11,
     isLibur: false,
   },
   {
@@ -104,6 +112,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 7,
     isLibur: false,
   },
   {
@@ -115,6 +124,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '16:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 15,
     isLibur: false,
   },
   {
@@ -126,6 +136,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '17:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 13,
     isLibur: false,
   },
   {
@@ -137,6 +148,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 4,
     isLibur: false,
   },
   {
@@ -148,6 +160,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '11:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 9,
     isLibur: false,
   },
   {
@@ -159,6 +172,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '16:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 0,
     isLibur: true,
     keteranganLibur: 'Pelatihan dokter',
   },
@@ -172,6 +186,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 12,
     isLibur: false,
   },
   {
@@ -183,6 +198,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '17:00',
     kapasitasMaksimal: 12,
+    pasienTerisi: 6,
     isLibur: false,
   },
   {
@@ -194,6 +210,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 15,
     isLibur: false,
   },
   {
@@ -205,6 +222,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '17:00',
     kapasitasMaksimal: 12,
+    pasienTerisi: 3,
     isLibur: false,
   },
   {
@@ -216,6 +234,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '11:00',
     kapasitasMaksimal: 10,
+    pasienTerisi: 9,
     isLibur: false,
   },
   {
@@ -227,6 +246,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 2,
     isLibur: false,
   },
   // ─── dr. Dewi Kusuma (dok-004) ────────────────────────────────────────────
@@ -239,6 +259,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 16,
     isLibur: false,
   },
   {
@@ -250,6 +271,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 5,
     isLibur: false,
   },
   {
@@ -261,6 +283,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '17:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 14,
     isLibur: false,
   },
   {
@@ -272,6 +295,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 19,
     isLibur: false,
   },
   {
@@ -283,6 +307,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '13:00',
     jamSelesai: '16:00',
     kapasitasMaksimal: 15,
+    pasienTerisi: 7,
     isLibur: false,
   },
   {
@@ -294,6 +319,7 @@ export const mockJadwal: JadwalDokter[] = [
     jamMulai: '08:00',
     jamSelesai: '12:00',
     kapasitasMaksimal: 20,
+    pasienTerisi: 1,
     isLibur: false,
   },
 ]

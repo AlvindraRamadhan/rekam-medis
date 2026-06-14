@@ -1,4 +1,6 @@
-import type { StatusKunjungan, StatusTagihan, StatusSinkronisasi } from '@/types'
+import type { StatusKunjungan, StatusTagihan, StatusSinkronisasi, Resep } from '@/types'
+
+export type StatusSurat = 'draft' | 'final'
 
 export interface StatusConfig {
   label: string
@@ -7,6 +9,11 @@ export interface StatusConfig {
 }
 
 export const STATUS_KUNJUNGAN: Record<StatusKunjungan, StatusConfig> = {
+  hadir: {
+    label: 'Hadir',
+    variant: 'outline',
+    className: 'bg-teal-100 text-teal-800 border-teal-200',
+  },
   menunggu: {
     label: 'Menunggu',
     variant: 'secondary',
@@ -62,5 +69,36 @@ export const STATUS_SINKRONISASI: Record<StatusSinkronisasi, StatusConfig> = {
     label: 'Gagal',
     variant: 'destructive',
     className: 'bg-red-100 text-red-700 border-red-200',
+  },
+}
+
+export const STATUS_SURAT: Record<StatusSurat, StatusConfig> = {
+  draft: {
+    label: 'Draft',
+    variant: 'secondary',
+    className: 'bg-gray-100 text-gray-600 border-gray-200',
+  },
+  final: {
+    label: 'Final',
+    variant: 'outline',
+    className: 'bg-emerald-100 text-emerald-700 border-emerald-200',
+  },
+}
+
+export const STATUS_RESEP: Record<Resep['status'], StatusConfig> = {
+  ditulis: {
+    label: 'Ditulis',
+    variant: 'outline',
+    className: 'bg-blue-100 text-blue-800 border-blue-200',
+  },
+  disiapkan: {
+    label: 'Disiapkan',
+    variant: 'secondary',
+    className: 'bg-amber-100 text-amber-800 border-amber-200',
+  },
+  diserahkan: {
+    label: 'Diserahkan',
+    variant: 'outline',
+    className: 'bg-emerald-100 text-emerald-800 border-emerald-200',
   },
 }

@@ -52,7 +52,7 @@ export interface Pasien {
 
 // ─── KUNJUNGAN & ANTRIAN ──────────────────────────────────────────────────────
 
-export type StatusKunjungan = 'menunggu' | 'dipanggil' | 'sedang_diperiksa' | 'selesai' | 'batal'
+export type StatusKunjungan = 'hadir' | 'menunggu' | 'dipanggil' | 'sedang_diperiksa' | 'selesai' | 'batal'
 export type JenisKunjungan = 'umum' | 'bpjs'
 
 export interface Kunjungan {
@@ -222,6 +222,7 @@ export interface JadwalDokter {
   jamMulai: string
   jamSelesai: string
   kapasitasMaksimal: number
+  pasienTerisi?: number
   isLibur: boolean
   keteranganLibur?: string
 }
